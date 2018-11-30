@@ -1,0 +1,26 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Visitatore" landmarks="sv1#area1 sv1#area2 sv1#area3 sv1#area4" homePage="sv1#area1#page1" linkVisibilityPolicy="always">
+  <OperationUnits>
+    <LoginUnit id="sv1#lgu2" name="Login1" gr:x="545" gr:y="-120">
+      <KOLink id="sv1#lgu2#kln3" name="KOFlow3" to="sv1#page5" automaticCoupling="true"/>
+    </LoginUnit>
+    <CreateUnit gr:x="845" gr:y="105" id="sv1#cru1" name="Creazione Utente" entity="ent1">
+      <OKLink id="sv1#cru1#oln1" name="OKFlow1" to="sv1#cnu1" automaticCoupling="true"/>
+    </CreateUnit>
+    <ConnectUnit gr:x="1030" gr:y="120" id="sv1#cnu1" name="Associa Gruppo" relationship="User2Group">
+      <SourceSelector id="sv1#cnu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#cnu1#su1#kcond2" name="KeyCondition2" predicate="in" implied="false"/>
+      </SourceSelector>
+      <TargetSelector id="sv1#cnu1#su2" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#cnu1#su2#kcond3" name="KeyCondition3" predicate="in" implied="false"/>
+      </TargetSelector>
+    </ConnectUnit>
+    <MathUnit id="sv1#mathu2" name="Math1" gr:x="1270" gr:y="240" resultType="float" defaultExpression="Operand1*(1-Operand2)">
+      <OKLink id="sv1#mathu2#oln5" name="OKFlow5" to="sv1#area2#page2#pwu10" gr:bendpoints="83,206,98,-214">
+        <LinkParameter id="sv1#mathu2#oln5#par26" name="Result_current oid" source="result" target="sv1#area2#page2#pwu10.current.ent29#att71"/>
+      </OKLink>
+      <MathVariable id="sv1#mathu2#mathv1" name="Operand1"/>
+      <MathVariable id="sv1#mathu2#mathv2" name="Operand2"/>
+      <KOLink id="sv1#mathu2#kln4" name="KOFlow4" to="sv1#page5" automaticCoupling="true"/>
+    </MathUnit>
+  </OperationUnits>
+</SiteView>

@@ -1,0 +1,23 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="-55" gr:y="-330" id="sv4#area5" name="Gestione Utenti" landmark="true" landmarks="sv4#area5#page25 sv4#area5#page14 sv4#area5#page16 sv4#area5#page20" defaultPage="sv4#area5#switch1">
+  <OperationUnits>
+    <SwitchUnit gr:x="1180" gr:y="640" id="sv4#area5#switch1" name="IsRedattore">
+      <Case value="2"/>
+      <OKLink id="sv4#area5#switch1#oln2" name="OKFlow2" to="sv4#cru2">
+        <LinkParameter id="sv4#area5#switch1#oln2#par64" name="Cognome_PASSING_cognome" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par51" target="sv4#cru2.User#att2"/>
+        <LinkParameter id="sv4#area5#switch1#oln2#par65" name="Email_PASSING_email" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par52" target="sv4#cru2.email"/>
+        <LinkParameter id="sv4#area5#switch1#oln2#par67" name="Nome_PASSING_nome" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par55" target="sv4#cru2.User#att1"/>
+        <LinkParameter id="sv4#area5#switch1#oln2#par68" name="Password_PASSING_password" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par56" target="sv4#cru2.password"/>
+        <LinkParameter id="sv4#area5#switch1#oln2#par69" name="Username_PASSING_userName" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par57" target="sv4#cru2.userName"/>
+        <LinkParameter id="sv4#area5#switch1#oln2#par71" name="Gruppo_PASSING_Group.oid(defaultGroup)" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par53" target="sv4#cru2.User2DefaultGroup.groupOID"/>
+      </OKLink>
+      <OKLink id="sv4#area5#switch1#oln3" name="OKFlow3" to="sv4#cru4" code="2">
+        <LinkParameter id="sv4#area5#switch1#oln3#par58" name="Cognome_PASSING_cognome" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par51" target="sv4#cru4.User#att2"/>
+        <LinkParameter id="sv4#area5#switch1#oln3#par59" name="Email_PASSING_email" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par52" target="sv4#cru4.email"/>
+        <LinkParameter id="sv4#area5#switch1#oln3#par61" name="Nome_PASSING_nome" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par55" target="sv4#cru4.User#att1"/>
+        <LinkParameter id="sv4#area5#switch1#oln3#par62" name="Password_PASSING_password" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par56" target="sv4#cru4.password"/>
+        <LinkParameter id="sv4#area5#switch1#oln3#par63" name="Username_PASSING_userName" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par57" target="sv4#cru4.userName"/>
+        <LinkParameter id="sv4#area5#switch1#oln3#par70" name="Gruppo_PASSING_Group.oid(defaultGroup)" sourceLinkParameter="sv4#area5#page14#enu3#ln40#par53" target="sv4#cru4.User2DefaultGroup.groupOID"/>
+      </OKLink>
+    </SwitchUnit>
+  </OperationUnits>
+</Area>

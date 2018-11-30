@@ -1,0 +1,27 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv4" name="Admin" landmarks="sv4#area5" homePage="sv4#area5#page25">
+  <OperationUnits>
+    <CreateUnit gr:x="1395" gr:y="345" id="sv4#cru2" name="Crea Nuovo Utente" entity="User"/>
+    <ModifyUnit gr:x="160" gr:y="-280" id="sv4#mfu1" name="Modifica" entity="ent1">
+      <Selector id="sv4#mfu1#su29" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#mfu1#su29#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+    </ModifyUnit>
+    <DeleteUnit gr:x="-355" gr:y="-10" id="sv4#dlu1" name="Elimina utente interno" entity="User">
+      <Selector id="sv4#dlu1#su17" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#dlu1#su17#kcond8" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit gr:x="1395" gr:y="125" id="sv4#cru3" name="Crea Nuovo Famigliare" entity="ent4"/>
+    <DeleteUnit gr:x="720" gr:y="-445" id="sv4#dlu2" name="Elimina Cliente" entity="ent1">
+      <Selector id="sv4#dlu2#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#dlu2#su19#kcond12" name="KeyCondition12" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <DeleteUnit gr:x="945" gr:y="-445" id="sv4#dlu3" name="Elimina Famiglia" entity="ent4">
+      <Selector id="sv4#dlu3#su22" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv4#dlu3#su22#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+    </DeleteUnit>
+    <CreateUnit gr:x="1395" gr:y="235" id="sv4#cru4" name="Crea Nuovo Redattore" entity="ent23"/>
+  </OperationUnits>
+</SiteView>

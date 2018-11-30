@@ -1,0 +1,94 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="645" gr:y="640" id="sv4#area5#page14" name="Aggiungi Utenti Interni" landmark="true">
+  <ContentUnits>
+    <EntryUnit gr:x="285" gr:y="5" id="sv4#area5#page14#enu3" name="Inserisci Dati" entity="User" fieldOrder="sv4#area5#page14#enu3#fld14 sv4#area5#page14#enu3#fld17 sv4#area5#page14#enu3#fld15 sv4#area5#page14#enu3#fld12 sv4#area5#page14#enu3#fld16 sv4#area5#page14#enu3#sfld1" linkOrder="sv4#area5#page14#enu3#ln40">
+      <Field id="sv4#area5#page14#enu3#fld12" name="Username" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area5#page14#enu3#fld12#mnd12" name="Campo non vuoto" errorMessage="Campo obbligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area5#page14#enu3#fld14" name="Nome" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area5#page14#enu3#fld14#mnd9" name="Campo non vuoto" errorMessage="Campo obbligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area5#page14#enu3#fld15" name="Email" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area5#page14#enu3#fld15#mnd8" name="Campo non vuoto" errorMessage="Campo obbligatorio"/>
+          <EMailValidationRule id="sv4#area5#page14#enu3#fld15#email1" name="EMail" errorMessage="Inserisci una mail valida"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area5#page14#enu3#fld16" name="Password" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area5#page14#enu3#fld16#mnd11" name="Campo non vuoto" errorMessage="Campo obbligatorio"/>
+        </VRules>
+      </Field>
+      <Field id="sv4#area5#page14#enu3#fld17" name="Cognome" type="string" modifiable="true">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area5#page14#enu3#fld17#mnd1" name="Campo non vuoto" errorMessage="Campo obbligatorio"/>
+        </VRules>
+      </Field>
+      <SelectionField id="sv4#area5#page14#enu3#sfld1" name="Gruppo" type="integer">
+        <VRules>
+          <MandatoryValidationRule id="sv4#area5#page14#enu3#sfld1#mnd10" name="Campo non vuoto" errorMessage="Campo obbligatorio"/>
+        </VRules>
+      </SelectionField>
+      <VRules/>
+      <Link id="sv4#area5#page14#enu3#ln40" name="Flow40" to="sv4#area5#switch1" type="normal" validate="true">
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par50" name="Gruppo_Switch" source="sv4#area5#page14#enu3#sfld1" target="sv4#area5#switch1.switch"/>
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par51" name="Cognome_PASSING" source="sv4#area5#page14#enu3#fld17" passing="true"/>
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par52" name="Email_PASSING" source="sv4#area5#page14#enu3#fld15" passing="true"/>
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par53" name="Gruppo_PASSING" source="sv4#area5#page14#enu3#sfld1" passing="true"/>
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par55" name="Nome_PASSING" source="sv4#area5#page14#enu3#fld14" passing="true"/>
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par56" name="Password_PASSING" source="sv4#area5#page14#enu3#fld16" passing="true"/>
+        <LinkParameter id="sv4#area5#page14#enu3#ln40#par57" name="Username_PASSING" source="sv4#area5#page14#enu3#fld12" passing="true"/>
+      </Link>
+    </EntryUnit>
+    <SelectorUnit gr:x="0" gr:y="0" id="sv4#area5#page14#seu2" name="Seleziona Gruppo" entity="Group">
+      <Link id="sv4#area5#page14#seu2#ln3" name="Flow3" to="sv4#area5#page14#enu3" type="transport" validate="true">
+        <LinkParameter id="sv4#area5#page14#seu2#ln3#par8" name="groupName_Selection Field1 [label]" source="groupNameArray" target="sv4#area5#page14#enu3#sfld1_label"/>
+        <LinkParameter id="sv4#area5#page14#seu2#ln3#par9" name="oid_Selection Field1 [output]" source="groupOIDArray" target="sv4#area5#page14#enu3#sfld1_output"/>
+      </Link>
+      <VRules/>
+    </SelectorUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv4#area5#page14#enu3">
+          <layout:Field field="sv4#area5#page14#enu3#fld14"/>
+          <layout:Field field="sv4#area5#page14#enu3#fld17"/>
+          <layout:Field field="sv4#area5#page14#enu3#fld15"/>
+          <layout:Field field="sv4#area5#page14#enu3#fld12"/>
+          <layout:Field field="sv4#area5#page14#enu3#fld16"/>
+          <layout:Field field="sv4#area5#page14#enu3#sfld1"/>
+          <layout:Link link="sv4#area5#page14#enu3#ln40"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12"/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

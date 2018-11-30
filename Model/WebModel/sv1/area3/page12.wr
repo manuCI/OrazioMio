@@ -1,0 +1,58 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="465" gr:y="285" id="sv1#area3#page12" name="Parcheggi" landmark="true">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#area3#page12#pwu15" name="Elenco parcheggi" sortable="true" checkable="false" useCountQuery="false" entity="ent11" linkOrder="sv1#area3#page12#pwu15#ln32" displayAttributes="ent5#att4 ent5#att34">
+      <Link id="sv1#area3#page12#pwu15#ln32" name="Dettagli" to="sv1#area3#page12#dau4" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+    <DataUnit gr:x="150" gr:y="135" id="sv1#area3#page12#dau4" name="Dettaglio parcheggio" entity="ent11" displayAttributes="ent5#att34 ent5#att4 rel25#role49.ent25#att32 rel25#role49.ent25#att33 rel25#role49.ent25#att6 ent11#att65 ent11#att66">
+      <Selector id="sv1#area3#page12#dau4#su10" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area3#page12#dau4#su10#kcond6" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page12#pwu15">
+          <layout:Link link="sv1#area3#page12#pwu15#ln32"/>
+          <layout:Attribute attribute="ent5#att4"/>
+          <layout:Attribute attribute="ent5#att34"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page12#dau4">
+          <layout:Attribute attribute="ent5#att34"/>
+          <layout:Attribute attribute="ent5#att4"/>
+          <layout:Attribute attribute="rel25#role49.ent25#att32"/>
+          <layout:Attribute attribute="rel25#role49.ent25#att33"/>
+          <layout:Attribute attribute="rel25#role49.ent25#att6"/>
+          <layout:Attribute attribute="ent11#att65"/>
+          <layout:Attribute attribute="ent11#att66"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,60 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="245" gr:y="0" id="sv1#area3#page7" name="Consulta Informazioni" linkOrder="sv1#area3#page7#ln25 sv1#area3#page7#ln26 sv1#area3#page7#ln27">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#area3#page7#pwu12" name="Localit&#224;" sortable="true" checkable="false" useCountQuery="false" entity="ent27" linkOrder="sv1#area3#page7#pwu12#ln28 sv1#area3#page7#pwu12#ln29 sv1#area3#page7#pwu12#ln30" displayAttributes="ent27#att68">
+      <Link id="sv1#area3#page7#pwu12#ln28" name="Cerca ZTL qui" to="sv1#area3#page11#pwu13" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area3#page7#pwu12#ln29" name="Cerca stazioni bici qui" to="sv1#area3#page13#pwu14" automaticCoupling="true" type="normal" validate="true"/>
+      <Link id="sv1#area3#page7#pwu12#ln30" name="Cerca parcheggi qui" to="sv1#area3#page12" automaticCoupling="true" type="normal" validate="true"/>
+    </PowerIndexUnit>
+    <ScrollerUnit gr:x="140" gr:y="20" id="sv1#area3#page7#scu3" name="Scorri localit&#224;" useCountQuery="false" entity="ent27" linkOrder="sv1#area3#page7#scu3#ln33" blockFactor="3">
+      <Link id="sv1#area3#page7#scu3#ln33" name="Flow33" to="sv1#area3#page7#pwu12" automaticCoupling="true" type="normal" validate="true"/>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page7#pwu12">
+          <layout:Link link="sv1#area3#page7#pwu12#ln28"/>
+          <layout:Link link="sv1#area3#page7#pwu12#ln29"/>
+          <layout:Link link="sv1#area3#page7#pwu12#ln30"/>
+          <layout:Attribute attribute="ent27#att68"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area3#page7#scu3">
+          <layout:Link link="sv1#area3#page7#scu3First"/>
+          <layout:Link link="sv1#area3#page7#scu3Previous"/>
+          <layout:Link link="sv1#area3#page7#scu3Block"/>
+          <layout:Link link="sv1#area3#page7#scu3Next"/>
+          <layout:Link link="sv1#area3#page7#scu3Last"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area3#page7#ln25" name="Consulta ZTL" to="sv1#area3#page11" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area3#page7#ln26" name="Consulta parcheggi" to="sv1#area3#page12" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area3#page7#ln27" name="Consulta Bicimia" to="sv1#area3#page13" automaticCoupling="true" type="normal" validate="true"/>
+</Page>
